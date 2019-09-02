@@ -85,14 +85,14 @@ function slide(e) {
 	if (e.movementX > 0) {
 		if (actual > 0) {
 			actual = 0;
-		} else {
+		} else if (actual !== 0) {
 			actual += e.movementX;
 		}
 	}
 	if (e.movementX < 0) {
 		if (actual < -4700) {
 			actual = -4700;
-		} else {
+		} else if (actual !== -4700) {
 			actual += e.movementX;
 		}
 	}
