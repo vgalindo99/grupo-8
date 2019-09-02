@@ -235,6 +235,9 @@ header {
 	transition: all 0.3s;
 	transform: scale(1, 1);
 }
+.btn:hover {
+	cursor: pointer;
+}
 .btn::before,
 .btn::after {
 	content: '';
