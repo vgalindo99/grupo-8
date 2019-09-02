@@ -228,29 +228,33 @@ header {
 /* SEMANA */
 .semanas-wrapper {
 	width: 100%;
+
 	overflow: hidden;
 }
 #semanas {
 	display: flex;
-	width: calc(650*14px);
+	width: calc(510.61*13px);
+	background: #e5dcc5;
 	height: 60vh;
 	transform: translateX(-120px);
+	overflow: hidden;
 }
 .semana {
 	height: 100%;
 	width: 650px;
 	transform: skewX(-20deg);
 	background: red;
+	text-align: center;
 }
 
 .blue {
-	background: #848fa5;
+	background: #8e9dbb;
 }
 .red {
 	background: #c14953;
 }
 .yellow {
-	background: #e5dcc5;
+	background: #eee7d6;
 }
 
 @media only screen and (max-width: 1510px) {
@@ -259,5 +263,17 @@ header {
 	}
 	.wrapper {
 		width: 73.75rem;
+	}
+}
+@media only screen and (max-width: 1210px) {
+	html {
+		font-size: 14px;
+	}
+	.wrapper {
+		width: 73.75rem;
+	}
+	.hero {
+		margin-right: 7rem;
+		width: 58%;
 	}
 }

@@ -76,53 +76,41 @@ arrowRight.addEventListener('click', () => {
 		movementRight(item5);
 	}
 });
+semanas.style.transform = `translateX(-${0}px)`;
+let count = 0;
+let active = 0;
+let previous = 0;
+let actual = 0;
+function slide(e) {
+	if (e.movementX > 0) {
+		if (actual > 0) {
+			actual = 0;
+		} else {
+			actual += e.movementX;
+		}
+	}
+	if (e.movementX < 0) {
+		if (actual < -4700) {
+			actual = -4700;
+		} else {
+			actual += e.movementX;
+		}
+	}
+	count++;
+	semanas.style.transform = `translateX(${actual}px)`;
+}
+let slider = (e) => {
+	slide(e);
+};
 
-// let cMove = 0;
-// let count = 0;
-// arrowLeft.style.opacity = 0.1;
-
-// function moveLeft(elemento, number) {
-// 	elemento.style.transform = `translateX(${number}px)`;
-// }
-// function moveRight(elemento, number) {
-// 	elemento.style.transform = `translateX(${number}px)`;
-// }
-// arrowRight.addEventListener('click', () => {
-// 	if (cMove !== -420) {
-// 		cMove -= 420;
-// 		moveLeft(item1, cMove);
-// 		moveLeft(item2, cMove);
-// 		moveLeft(item3, cMove);
-// 		moveLeft(item4, cMove);
-// 		moveLeft(item5, cMove);
-// 		console.log(cMove);
-// 		count++;
-// 		arrowRight.style.opacity = 0.1;
-// 	}
-// 	if (cMove !== 0) {
-// 		arrowLeft.style.opacity = 1;
-// 	}
-// 	if (cMove === 420) {
-// 		arrowRight.style.opacity = 0.1;
-// 	}
-// });
-// arrowLeft.addEventListener('click', () => {
-// 	if (cMove !== 0) {
-// 		cMove += 420;
-// 		moveRight(item1, cMove);
-// 		moveRight(item2, cMove);
-// 		moveRight(item3, cMove);
-// 		moveRight(item4, cMove);
-// 		moveRight(item5, cMove);
-// 		count--;
-// 		arrowLeft.style.opacity = 0.1;
-
-// 		console.log(cMove);
-// 	} else {
-// 		arrowLeft.style.opacity = 1;
-// 	}
-// 	if (cMove === 0) {
-// 		arrowLeft.style.opacity = 0.1;
-// 		arrowRight.style.opacity = 1;
-// 	}
-// });
+semanas.addEventListener('mousedown', (e) => {
+	active = 0;
+	previous = actual;
+	if (e.buttons === 1) {
+		semanas.addEventListener('mousemove', slider);
+	}
+});
+window.addEventListener('mouseup', () => {
+	// For all major browsers, esemanascept IE 8 and earlier
+	semanas.removeEventListener('mousemove', slider);
+});
