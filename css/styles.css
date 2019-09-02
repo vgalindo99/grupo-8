@@ -220,6 +220,9 @@ header {
 	padding: .8rem 3rem;
 	border: 1px solid grey;
 }
+.btn:hover {
+	cursor: pointer;
+}
 /* color white */
 .cw {
 	color: white;

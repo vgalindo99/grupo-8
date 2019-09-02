@@ -83,14 +83,14 @@ let previous = 0;
 let actual = 0;
 function slide(e) {
 	if (e.movementX > 0) {
-		if (actual > 0) {
+		if (actual > 0 || actual + e.movementX > 0) {
 			actual = 0;
 		} else if (actual !== 0) {
 			actual += e.movementX;
 		}
 	}
 	if (e.movementX < 0) {
-		if (actual < -4700) {
+		if (actual < -4700 || actual + e.movementX < -4700) {
 			actual = -4700;
 		} else if (actual !== -4700) {
 			actual += e.movementX;
