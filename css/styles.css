@@ -7,7 +7,9 @@
 	list-style: none;
 	box-sizing: border-box;
 }
-
+html {
+	font-size: 15px;
+}
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -113,14 +115,13 @@ header {
 /* 	EQUIPO */
 #equipo {
 	background: black;
-	height: 90vh;
 	position: relative;
 }
 #equipo h2 {
 	padding: 4rem 0 0 0;
 	display: inline-block;
 	font-size: 4rem;
-	margin-bottom: 4rem;
+	margin-bottom: 3.4rem;
 	margin-left: 2.5rem;
 	text-transform: uppercase;
 	position: relative;
@@ -137,18 +138,7 @@ header {
 #equipo p small {
 	color: white;
 }
-.carousel-container {
-	display: grid;
-	grid-template: 1fr / repeat(5, 21.25rem);
-	grid-gap: 5rem;
-	height: 60vh;
-	flex-wrap: nowrap;
-	align-items: center;
-	flex-shrink: 0;
-	justify-content: flex-start;
-	width: 125rem;
-	overflow: hidden;
-}
+
 .arrow {
 	position: absolute;
 	color: white;
@@ -165,12 +155,24 @@ header {
 #arrow-left {
 	left: 30px;
 }
+.carousel-container {
+	display: grid;
+	grid-template: 1fr / repeat(5, 21.25rem);
+	grid-gap: 5rem;
+	height: 60vh;
+	width: 125rem;
+	align-items: center;
+	margin-bottom: 2.5rem;
+	position: relative;
+	overflow: hidden;
+}
 .carousel-item {
 	text-align: center;
 	width: 21.25rem;
 	/* padding: 5rem; */
 	overflow: hidden;
-	position: relative;
+
+	position: absolute;
 }
 .carousel-item:hover {
 	cursor: pointer;
@@ -249,4 +251,13 @@ header {
 }
 .yellow {
 	background: #e5dcc5;
+}
+
+@media only screen and (max-width: 1510px) {
+	html {
+		font-size: 14px;
+	}
+	.wrapper {
+		width: 73.75rem;
+	}
 }
