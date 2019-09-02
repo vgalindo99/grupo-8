@@ -21,7 +21,8 @@ async function move(e, ini, fin) {
 			{ left: fin }
 		],
 		{
-			duration : 500
+			duration : 500,
+			easing   : 'ease'
 		}
 	);
 	e.style.left = fin;
