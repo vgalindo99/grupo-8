@@ -1,279 +1,385 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	color: black;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
+
 html {
-	font-size: 15px;
+  scroll-behavior: smooth;
+  font-size: 15px;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
-	position: relative;
-	height: 4rem;
+  position: relative;
+  height: 4rem;
 }
 
 .navbar-container {
-	display: flex;
-	z-index: 20;
-	padding: 1.5rem 3rem;
-	height: 4rem;
-	background-color: white;
-	position: fixed;
-	width: 100%;
-	justify-content: space-between; /* Posicionamiento horizontal */
-	align-items: center;
-	-webkit-box-shadow: 0px -8px 15px 2px rgba(0, 0, 0, 0.48);
-	-moz-box-shadow: 0px -8px 15px 2px rgba(0, 0, 0, 0.48);
-	box-shadow: 0px -8px 15px 2px rgba(0, 0, 0, 0.48);
+  display: flex;
+  z-index: 20;
+  padding: 1.5rem 3rem;
+  height: 4rem;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between; /* Posicionamiento horizontal */
+  align-items: center;
+  -webkit-box-shadow: 0px -8px 15px 2px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px -8px 15px 2px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px -8px 15px 2px rgba(0, 0, 0, 0.48);
 }
 .navbar {
-	display: flex;
-	width: 18rem;
-	justify-content: space-between;
+  display: flex;
+  width: 18rem;
+  justify-content: space-between;
 }
 .navbar li {
-	font-weight: bold;
-	font-size: .8rem;
-	text-transform: uppercase;
+  font-weight: bold;
+  transition-duration: 0.2s;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.navbar li:hover {
+  opacity: 0.6;
 }
 
 .logo h1 {
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 /* sections */
 .inicio {
-	background-image: url(../images/fondo.jpg);
-	background-position: bottom center;
-	background-size: cover;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	flex-direction: column;
-
-	height: 80vh;
+  background-image: url(../images/fondo.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
 }
 /* HERO */
 .hero {
-	width: 34%;
-	margin-right: 20rem;
+  width: 34%;
+  margin-right: 20rem;
 }
 .hero h1 {
-	font-weight: 400;
-	font-size: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
 }
 .hero p {
-	font-size: 1.4rem;
-	font-weight: 300;
-	margin: .8rem 0 3rem 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0.8rem 0 3rem 0;
 }
 
 /* DESAFIO */
 #desafio {
-	background: #f8f8f8;
-
-	padding: 5rem 0 6rem 0;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  background: #f8f8f8;
+  padding: 5rem 0 6rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #desafio h2 {
-	font-size: 3rem;
-	padding-bottom: 5rem;
-	color: #3b3b3b;
+  font-size: 3rem;
+  padding-bottom: 5rem;
+  color: #3b3b3b;
 }
 .desafio-container {
-	align-items: center;
-	display: flex;
-	align-content: flex-end;
-	justify-content: space-evenly;
-	width: 90%;
+  align-items: center;
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.icono img {
+  z-index: 2;
+  transform: rotateY(0deg);
+  transition-duration: 0.3s;
+  backface-visibility: hidden;
 }
 .icono {
-	border-radius: 100%;
-	background: #f9d69d;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 150px;
-	width: 150px;
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 100%;
+  background: #f9d69d;
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  height: 150px;
+  position: relative;
+  width: 150px;
 }
+.icono:after {
+  content: "aea mongolazo gaa asada  ads dsads a daas ddsa as ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  padding: 0.4rem;
+  z-index: 1;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.desafio-item:hover {
+  cursor: pointer;
+}
+.desafio-item:hover .icono {
+  transform: rotateY(180deg) scale(1.3);
+}
+
 .desafio-el {
-	text-align: center;
-	margin-top: 2rem;
-	font-size: 2rem;
-	color: #6b6b6b;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #6b6b6b;
 }
 
 /* 	EQUIPO */
 #equipo {
-	background: black;
-	position: relative;
+  background: black;
+  position: relative;
 }
 #equipo h2 {
-	padding: 4rem 0 0 0;
-	display: inline-block;
-	font-size: 4rem;
-	margin-bottom: 3.4rem;
-	margin-left: 2.5rem;
-	text-transform: uppercase;
-	position: relative;
+  padding: 4rem 0 0 0;
+  display: inline-block;
+  font-size: 4rem;
+  margin-bottom: 3.4rem;
+  margin-left: 2.5rem;
+  text-transform: uppercase;
+  position: relative;
 }
 #equipo h2:after {
-	content: "";
-	position: absolute;
-	bottom: -12px;
-	width: 45%;
-	left: 0;
-	height: 8px;
-	background: #c14953;
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  width: 45%;
+  left: 0;
+  height: 8px;
+  background: #c14953;
 }
 #equipo p small {
-	color: white;
+  color: white;
 }
 
 .arrow {
-	position: absolute;
-	color: white;
-	z-index: 12;
-	font-size: 4rem;
-	top: 57%;
+  position: absolute;
+  color: white;
+  z-index: 12;
+  font-size: 4rem;
+  top: 57%;
 }
 .arrow:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 #arrow-right {
-	right: 30px;
+  right: 30px;
 }
 #arrow-left {
-	left: 30px;
+  left: 30px;
 }
 .carousel-container {
-	display: grid;
-	grid-template: 1fr / repeat(5, 21.25rem);
-	grid-gap: 5rem;
-	height: 60vh;
-	width: 125rem;
-	align-items: center;
-	margin-bottom: 2.5rem;
-	position: relative;
-	overflow: hidden;
+  display: grid;
+  grid-template: 1fr / repeat(5, 21.25rem);
+  grid-gap: 5rem;
+  height: 60vh;
+  width: 125rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
 }
 .carousel-item {
-	text-align: center;
-	width: 21.25rem;
-	/* padding: 5rem; */
-	overflow: hidden;
+  text-align: center;
+  width: 21.25rem;
+  /* padding: 5rem; */
+  overflow: hidden;
 
-	position: absolute;
+  position: absolute;
 }
 .carousel-item:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
-.carousel-item:hover .equipo-info {
-	bottom: 0px;
+/* .carousel-item:hover .equipo-info {
+  bottom: 0;
+} */
+hr {
+  background: white;
+  margin: 1rem 0;
 }
 .wrapper {
-	position: relative;
-	width: 100rem;
-	margin: 0 auto;
-	overflow: hidden;
+  position: relative;
+  width: 100rem;
+  margin: 0 auto;
+  overflow: hidden;
 }
 /* #item4 {
 	transform: translateX(200px);
 } */
 
 .equipo-info {
-	position: absolute;
-	transition: .5s;
-	width: 100%;
-	height: 120px;
-	background: rgba(0, 0, 0, 0.747);
-	text-align: left;
-	bottom: -150px;
-	padding: .8rem .7rem;
+  position: absolute;
+  transition: 0.5s;
+  width: 100%;
+  height: 16rem;
+  background: rgba(0, 0, 0, 0.747);
+  text-align: left;
+  bottom: -8rem;
+  padding: 0.8rem 0.7rem;
 }
 .equipo-info h1 {
-	color: #d4d4d4;
-	text-transform: capitalize;
-	font-size: 2rem;
+  color: #d4d4d4;
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 .equipo-info span {
-	display: inline-block;
-	color: #d4d4d4;
-	padding: .4rem 0;
-	font-weight: lighter;
+  display: inline-block;
+  color: white;
+  padding: 0.4rem 0;
+  font-weight: lighter;
 }
 .equipo-info span img {
-	vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
 /* utilities */
 /* BTN */
 
 /* color white */
 .cw {
-	color: white;
+  color: white;
 }
 
 /* SEMANA */
 .semanas-wrapper {
-	width: 100%;
+  width: 100%;
 
-	overflow: hidden;
+  overflow: hidden;
 }
 #semanas {
-	display: flex;
-	width: calc(510.61*13px);
-	background: #e5dcc5;
-	height: 60vh;
-	transform: translateX(-120px);
-	overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #efeff0;
+
+  height: 100vh;
+  transform: translateX(-120px);
+  overflow: hidden;
 }
 .semana {
-	height: 100%;
-	width: 650px;
-	transform: skewX(-20deg);
-	background: red;
-	text-align: center;
+  border: 1px solid grey;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+}
+.semana:after {
+  content: "";
+  width: 105%;
+  height: 105%;
+  border: 1px dotted black;
+  border-radius: 100%;
+  position: absolute;
+}
+.semana h1 span {
+  font-size: 15rem;
+}
+.semana span {
+  font-size: 2rem;
+}
+.linea-tiempo {
+  width: 90rem;
+  height: 2px;
+  background: rgb(88, 88, 88);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+#semanas-selector {
+  transition: 0.4s;
+  position: absolute;
+  left: -0.5rem;
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.125rem solid rgb(131, 131, 131);
+  border-radius: 100%;
+}
+.show {
+  transition: 0.3s;
+  transition-delay: 0.4s;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: white;
+  border-radius: 100%;
+}
+.show:hover {
+  cursor: pointer;
 }
 
-.blue {
-	background: #8e9dbb;
+@media only screen and (max-width: 1270px) {
+  html {
+    font-size: 11px;
+  }
+  .wrapper {
+    width: 73.75rem;
+  }
+  .hero {
+    margin-right: 7rem;
+    width: 58%;
+  }
 }
-.red {
-	background: #c14953;
-}
-.yellow {
-	background: #e5dcc5;
+@media only screen and (max-width: 1710px) {
+  html {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (max-width: 1510px) {
-	html {
-		font-size: 14px;
-	}
-	.wrapper {
-		width: 73.75rem;
-	}
+@media only screen and (max-width: 870px) {
+  html {
+    font-size: 10px;
+  }
+  .wrapper {
+    width: 47.5rem;
+  }
 }
-@media only screen and (max-width: 1210px) {
-	html {
-		font-size: 14px;
-	}
-	.wrapper {
-		width: 73.75rem;
-	}
-	.hero {
-		margin-right: 7rem;
-		width: 58%;
-	}
+@media only screen and (max-width: 670px) {
+  html {
+    font-size: 12px;
+  }
+  .wrapper {
+    width: 21.25rem;
+  }
 }
+
+/* html {
+    font-size: 10px;
+  }
+  .wrapper {
+    width: 47.5rem;
+  } */
