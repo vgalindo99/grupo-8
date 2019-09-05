@@ -37,7 +37,7 @@ function shower(elemento, posicion) {
     window[`show${selector}`].style.transitionDelay = "0s";
     window[`show${selector}`].style.transitionDuration = ".1s";
     selector = posicion;
-    semanaLink.href = `semana${posicion}.html`;
+    semanaLink.href = `Semana${posicion}.html`;
   });
 }
 
