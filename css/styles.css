@@ -138,7 +138,12 @@ header {
   align-items: center;
   transition-duration: 0.3s;
 }
-
+#icono2:after {
+  content: "Descripción 2";
+}
+#icono3:after {
+  content: "Descripción 3";
+}
 .desafio-item:hover {
   cursor: pointer;
 }

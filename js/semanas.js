@@ -13,6 +13,7 @@ const show12 = document.getElementById("show12");
 const show13 = document.getElementById("show13");
 const semanasSelector = document.getElementById("semanas-selector");
 const semanaNumero = document.getElementById("semana-numero");
+const semanaLink = document.getElementById("semana-link");
 
 var i;
 var selector = 1;
@@ -36,6 +37,7 @@ function shower(elemento, posicion) {
     window[`show${selector}`].style.transitionDelay = "0s";
     window[`show${selector}`].style.transitionDuration = ".1s";
     selector = posicion;
+    semanaLink.href = `semana${posicion}.html`;
   });
 }
 
