@@ -123,7 +123,7 @@ header {
   width: 150px;
 }
 .icono:after {
-  content: "Aqui va una breve descripción";
+  content: "Somos un grupo de estudiantes de Ingeniería Biomédica que investigamos exhaustivamente la problemática del tratamiento del síndrome del Túnel Carpiano";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -132,6 +132,7 @@ header {
   z-index: 1;
   transform: rotateY(180deg);
   backface-visibility: hidden;
+  font-size: 67%;
 
   display: flex;
   justify-content: center;
@@ -139,10 +140,10 @@ header {
   transition-duration: 0.3s;
 }
 #icono2:after {
-  content: "Descripción 2";
+  content: "Destacaremos en la creación de un dispositivo para el tratamiento del ligamento Carpiano transverso y así evitar su síndrome.";
 }
 #icono3:after {
-  content: "Descripción 3";
+  content: "Evitar la cirugía para el síndrome de Túnel Carpiano, innovando con un tratamiento no invasivo.";
 }
 .desafio-item:hover {
   cursor: pointer;
