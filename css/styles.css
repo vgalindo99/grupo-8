@@ -382,6 +382,33 @@ hr {
   }
 }
 
+#introduccion {
+  background: #f8f8f8;
+  padding: 5rem 0 20rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#introduccion h1 {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+  color: #3b3b3b;
+}
+
+#introduccion p {
+  font-size: 1.5rem;
+  padding: 0 25rem 10rem 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  text-align: justify;
+}
+
 /* html {
     font-size: 10px;
   }
