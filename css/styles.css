@@ -388,31 +388,152 @@ hr {
   padding: 5rem 0 20rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-
+.parrafo {
+  text-align: center;
+}
 #introduccion h1 {
   font-size: 3rem;
-  padding-bottom: 5rem;
   color: #3b3b3b;
+  align-items: center;
+}
+
+#introduccion h2 {
+  font-size: 2.5rem;
+  width: 70rem;
+  margin: 2.5rem 0;
+  align-items: center;
+  justify-content: left;
+  color: #3b3b3b;
+}
+#introduccion ul {
+  font-size: 1.5rem;
+
+  color: #3b3b3b;
+  display: inline-block;
+  width: 60rem;
+  text-align: justify;
 }
 
 #introduccion p {
   font-size: 1.5rem;
-  padding: 0 25rem 10rem 25rem;
+  width: 68rem;
   color: #3b3b3b;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   border-radius: 100%;
   position: relative;
   text-align: justify;
 }
+#quienes-somos {
+  text-align: center;
+}
+#quienes-somos .team {
+  width: 70rem;
+  margin: 2rem auto;
+  align-items: center;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+}
+.team p,
+.team h2 {
+  margin: 0 0 0 1.7rem;
+}
 
+#bibliografia {
+  background: #84c0c6;
+  padding: 5rem 0 10rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#bibliografia h2 {
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  color: #3b3b3b;
+  align-items: center;
+}
+#bibliografia ol {
+  font-size: 1.5rem;
+  padding: 0 25rem 10rem 25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100%;
+  text-align: justify;
+}
+#semana2 {
+  background: #f8f8f8;
+  padding: 5rem 0 20rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#semana2 h1 {
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  color: #3b3b3b;
+  text-align: center;
+}
+#semana2 h2 {
+  font-size: 4rem;
+  padding-bottom: 5rem;
+  color: #3b3b3b;
+  align-items: center;
+}
+#semana2 p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  border-radius: 100%;
+  position: relative;
+  text-align: justify;
+}
+#semana2 img {
+  padding: 2rem 0;
+}
+#semana2-d {
+  background: #81f495;
+  padding: 5rem 0 20rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#semana2-d h2 {
+  font-size: 4rem;
+  padding-bottom: 5rem;
+  color: #3b3b3b;
+  align-items: center;
+}
 /* html {
     font-size: 10px;
   }
   .wrapper {
     width: 47.5rem;
   } */
+.my-2 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.my-1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/* 70rem width */
+.w-7 {
+  width: 70rem !important;
+}
+.w-7 li {
+  font-weight: bold;
+  color: #3b3b3b;
+}
