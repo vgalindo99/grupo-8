@@ -437,9 +437,30 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-.team p,
+#quienes-somos h1 {
+  margin: 2rem 2rem;
+  font-size: 5rem;
+  color: #3b3b3b;
+  align-items: center;
+}
+
+.team p {
+  margin: 0 0 0 1.7rem;
+  font-size: 1.5rem;
+  width: 60rem;
+  margin: 2.5rem 2.5rem;
+  align-items: center;
+  justify-content: left;
+  color: #3b3b3b;
+}
 .team h2 {
   margin: 0 0 0 1.7rem;
+  font-size: 3rem;
+  width: 60rem;
+  margin: 2.5rem 2.5rem;
+  align-items: center;
+  justify-content: left;
+  color: #3b3b3b;
 }
 
 #bibliografia {
@@ -476,14 +497,14 @@ hr {
   flex-direction: column;
 }
 #semana2 h1 {
+  margin: 0 10rem 0;
   font-size: 5rem;
-  padding-bottom: 5rem;
   color: #3b3b3b;
   text-align: center;
 }
 #semana2 h2 {
   font-size: 4rem;
-  padding-bottom: 5rem;
+  margin: 5rem 5rem;
   color: #3b3b3b;
   align-items: center;
 }
