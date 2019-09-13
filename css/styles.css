@@ -410,7 +410,6 @@ hr {
 }
 #introduccion ul {
   font-size: 1.5rem;
-
   color: #3b3b3b;
   display: inline-block;
   width: 60rem;
@@ -438,7 +437,7 @@ hr {
   justify-content: space-between;
 }
 #quienes-somos h1 {
-  margin: 2rem 2rem;
+  margin: 4rem 4rem;
   font-size: 5rem;
   color: #3b3b3b;
   align-items: center;
@@ -455,7 +454,16 @@ hr {
 }
 .team h2 {
   margin: 0 0 0 1.7rem;
-  font-size: 3rem;
+  font-size: 4rem;
+  width: 60rem;
+  margin: 2.5rem 2.5rem;
+  align-items: center;
+  justify-content: left;
+  color: #3b3b3b;
+}
+.team h3 {
+  margin: 0 0 0 1.7rem;
+  font-size: 2.5rem;
   width: 60rem;
   margin: 2.5rem 2.5rem;
   align-items: center;
@@ -465,14 +473,14 @@ hr {
 
 #bibliografia {
   background: #84c0c6;
-  padding: 5rem 0 10rem 0;
+  padding: 5rem 0 3rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 #bibliografia h2 {
   font-size: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   color: #3b3b3b;
   align-items: center;
 }
