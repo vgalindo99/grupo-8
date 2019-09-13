@@ -486,14 +486,11 @@ hr {
 }
 #bibliografia ol {
   font-size: 1.5rem;
-  padding: 0 25rem 10rem 25rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem 25rem 3rem 25rem;
   color: #3b3b3b;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 100%;
   text-align: justify;
 }
 #semana2 {
@@ -524,7 +521,6 @@ hr {
   flex-direction: column;
   justify-content: right;
   align-items: left;
-  border-radius: 100%;
   position: relative;
   text-align: justify;
 }
@@ -540,9 +536,28 @@ hr {
 }
 #semana2-d h2 {
   font-size: 4rem;
-  padding-bottom: 5rem;
   color: #3b3b3b;
   align-items: center;
+}
+#semana2-d h3 {
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  padding-right: 61rem;
+  padding-bottom: 3rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana2-d p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  border-radius: 100%;
+  position: relative;
+  text-align: justify;
 }
 /* html {
     font-size: 10px;
@@ -565,4 +580,45 @@ hr {
 .w-7 li {
   font-weight: bold;
   color: #3b3b3b;
+}
+
+#semana3 {
+  background: #f8f8f8;
+  padding: 5rem 0 20rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#semana3 h1 {
+  margin: 0 10rem 0;
+  font-size: 5rem;
+  color: #3b3b3b;
+  text-align: center;
+}
+#semana3 h2 {
+  font-size: 4rem;
+  margin: 5rem 5rem;
+  color: #3b3b3b;
+  align-items: left;
+  text-align: left;
+}
+#semana3 h3 {
+  font-size: 2.5rem;
+  padding-right: 55rem;
+  margin: 5rem 5rem;
+  color: #3b3b3b;
+  align-items: left;
+  text-align: left;
+}
+#semana3 p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  position: relative;
+  text-align: justify;
 }
