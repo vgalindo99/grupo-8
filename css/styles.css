@@ -631,7 +631,11 @@ hr {
   position: relative;
   text-align: justify;
 }
+#semana3 img {
+  padding-bottom: 3rem;
+}
 
+/*copyright*/
 #copyright {
   background: #25283d;
   padding: 3rem 0 3rem 0;
@@ -648,4 +652,45 @@ hr {
   font-size: 1.5rem;
   color: #f9f9f9;
   align-items: center;
+}
+/* Semana 4*/
+#semana4 {
+  background: #f8f8f8;
+  padding: 5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#semana4 h1 {
+  margin: 0 10rem 0;
+  font-size: 5rem;
+  color: #3b3b3b;
+  text-align: center;
+}
+#semana4 h2 {
+  font-size: 4rem;
+  margin: 5rem 5rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana4 h3 {
+  font-size: 3rem;
+  margin: 5rem 5rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana4 p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  position: relative;
+  text-align: justify;
+}
+#semana4 img {
+  padding-top: 3rem;
 }
