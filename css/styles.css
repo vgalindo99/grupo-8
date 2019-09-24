@@ -267,7 +267,11 @@ hr {
 }
 /* utilities */
 /* BTN */
-
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
 /* color white */
 .cw {
   color: white;
@@ -344,6 +348,13 @@ hr {
   background: white;
   border-radius: 100%;
 }
+.show h2 {
+  display: none;
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 60px;
+}
+
 .show:hover {
   cursor: pointer;
 }
@@ -579,25 +590,26 @@ hr {
   font-weight: bold;
   color: #3b3b3b;
 }
-
+body{
+  #f8f8f8
+}
 #semana3 {
-  background: #f8f8f8;
+  background: ;
   padding: 5rem 0 20rem 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
 #semana3 h1 {
-  margin: 0 10rem 0;
   font-size: 5rem;
   color: #3b3b3b;
   flex-direction: column;
-  text-align: justify;
+  align-self: center
 }
 #semana3 h2 {
   font-size: 4rem;
-  margin: 5rem 5rem;
+  margin: 5rem 0;
   color: #3b3b3b;
   flex-direction: column;
   align-items: left;
@@ -606,8 +618,7 @@ hr {
 }
 #semana3 h3 {
   font-size: 3rem;
-  padding-right: 55rem;
-  margin: 5rem 5rem;
+  margin: 5rem 0;
   color: #3b3b3b;
   flex-direction: column;
   text-align: justify;
@@ -623,7 +634,6 @@ hr {
 }
 #semana3 p {
   font-size: 1.5rem;
-  padding: 0 25rem 0 25rem;
   color: #3b3b3b;
   display: flex;
   flex-direction: column;
@@ -633,6 +643,12 @@ hr {
 }
 #semana3 img {
   padding-bottom: 3rem;
+  align-self: center
+}
+.center-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 /*copyright*/

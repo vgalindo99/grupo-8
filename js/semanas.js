@@ -11,13 +11,26 @@ const show10 = document.getElementById("show10");
 const show11 = document.getElementById("show11");
 const show12 = document.getElementById("show12");
 const show13 = document.getElementById("show13");
+const text1 = document.getElementById("text1");
+const text2 = document.getElementById("text2");
+const text3 = document.getElementById("text3");
+const text4 = document.getElementById("text4");
+const text5 = document.getElementById("text5");
+const text6 = document.getElementById("text6");
+const text7 = document.getElementById("text7");
+const text8 = document.getElementById("text8");
+const text9 = document.getElementById("text9");
+const text10 = document.getElementById("text10");
+const text11 = document.getElementById("text11");
+const text12 = document.getElementById("text12");
+const text13 = document.getElementById("text13");
 const semanasSelector = document.getElementById("semanas-selector");
 const semanaNumero = document.getElementById("semana-numero");
 const semanaLink = document.getElementById("semana-link");
 
 var i;
 var selector = 1;
-
+var memo = 1;
 function shower(elemento, posicion) {
   elemento.addEventListener("click", () => {
     if (semanaNumero.childNodes[0]) {
@@ -27,7 +40,13 @@ function shower(elemento, posicion) {
     var number = document.createTextNode(`${posicion}`);
     var node = document.createElement("span");
     node.appendChild(number);
+
+    window[`text${memo}`].style.display = "none";
+
+    window[`text${posicion}`].style.display = "block";
+
     semanaNumero.appendChild(node);
+
     elemento.style.background = "grey";
     elemento.style.transitionDelay = "0.4s";
     semanasSelector.style.left = `${(90 / 12) * (posicion - 1) -
@@ -38,6 +57,7 @@ function shower(elemento, posicion) {
     window[`show${selector}`].style.transitionDuration = ".1s";
     selector = posicion;
     semanaLink.href = `Semana${posicion}.html`;
+    memo = posicion;
   });
 }
 
