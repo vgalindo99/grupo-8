@@ -642,6 +642,7 @@ body{
   text-align: justify;
 }
 #semana3 img {
+  padding-top: 3rem;
   padding-bottom: 3rem;
   align-self: center
 }
@@ -708,5 +709,6 @@ body{
   text-align: justify;
 }
 #semana4 img {
+  padding-bottom: 3rem;
   padding-top: 3rem;
 }
