@@ -595,7 +595,7 @@ body{
 }
 #semana3 {
   background: ;
-  padding: 5rem 0 20rem 0;
+  padding: 5rem 0 5rem 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -609,7 +609,7 @@ body{
 }
 #semana3 h2 {
   font-size: 4rem;
-  margin: 5rem 0;
+  margin: 3rem 0;
   color: #3b3b3b;
   flex-direction: column;
   align-items: left;
@@ -618,7 +618,7 @@ body{
 }
 #semana3 h3 {
   font-size: 3rem;
-  margin: 5rem 0;
+  margin: 2rem 0;
   color: #3b3b3b;
   flex-direction: column;
   text-align: justify;
