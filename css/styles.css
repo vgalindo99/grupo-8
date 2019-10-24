@@ -590,8 +590,8 @@ hr {
   font-weight: bold;
   color: #3b3b3b;
 }
-body{
-  #f8f8f8
+body {
+  color: #f8f8f8;
 }
 #semana3 {
   background: ;
@@ -605,7 +605,7 @@ body{
   font-size: 5rem;
   color: #3b3b3b;
   flex-direction: column;
-  align-self: center
+  align-self: center;
 }
 #semana3 h2 {
   font-size: 4rem;
@@ -644,7 +644,7 @@ body{
 #semana3 img {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  align-self: center
+  align-self: center;
 }
 .center-container {
   width: 100%;
@@ -728,13 +728,14 @@ body{
 }
 #semana5 h2 {
   font-size: 4rem;
-  margin: 5rem 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   color: #3b3b3b;
   align-items: left;
 }
 #semana5 h3 {
   font-size: 3rem;
-  margin: 5rem 5rem;
+  margin-bottom: 1rem;
   color: #3b3b3b;
   align-items: left;
 }
@@ -750,6 +751,91 @@ body{
   text-align: justify;
 }
 #semana5 img {
-  padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* Semana 6*/
+#semana6 {
+  background: #f8f8f8;
+  padding: 5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#semana6 h1 {
+  margin: 0 2.5rem 0;
+  font-size: 5rem;
+  color: #3b3b3b;
+  text-align: center;
+}
+#semana6 h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana6 h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana6 p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  position: relative;
+  text-align: justify;
+}
+#semana6 img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* Semana 7*/
+#semana7 {
+  background: #f8f8f8;
+  padding: 5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#semana7 h1 {
+  margin: 0 0 2.5rem 0;
+  font-size: 5rem;
+  color: #3b3b3b;
+  text-align: center;
+}
+#semana7 h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana7 h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana7 p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  position: relative;
+  text-align: justify;
+}
+#semana7 img {
+  padding-bottom: 1.5rem;
 }
