@@ -520,7 +520,7 @@ hr {
 }
 #semana2 h2 {
   font-size: 4rem;
-  margin: 5rem 5rem;
+  margin: 0rem 5rem;
   color: #3b3b3b;
   align-items: center;
 }
@@ -536,7 +536,7 @@ hr {
   text-align: justify;
 }
 #semana2 img {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 #semana2-d {
   background: #81f495;
