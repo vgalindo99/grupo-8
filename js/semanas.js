@@ -11,6 +11,7 @@ const show10 = document.getElementById("show10");
 const show11 = document.getElementById("show11");
 const show12 = document.getElementById("show12");
 const show13 = document.getElementById("show13");
+const show14 = document.getElementById("show14");
 const text1 = document.getElementById("text1");
 const text2 = document.getElementById("text2");
 const text3 = document.getElementById("text3");
@@ -24,6 +25,7 @@ const text10 = document.getElementById("text10");
 const text11 = document.getElementById("text11");
 const text12 = document.getElementById("text12");
 const text13 = document.getElementById("text13");
+const text14 = document.getElementById("text14");
 const semanasSelector = document.getElementById("semanas-selector");
 const semanaNumero = document.getElementById("semana-numero");
 const semanaLink = document.getElementById("semana-link");
@@ -49,8 +51,8 @@ function shower(elemento, posicion) {
 
     elemento.style.background = "grey";
     elemento.style.transitionDelay = "0.4s";
-    semanasSelector.style.left = `${(90 / 12) * (posicion - 1) -
-      0.75 -
+    semanasSelector.style.left = `${(90 / 13) * (posicion - 1) -
+      0.72 -
       0.125 * (posicion - 3)}rem`;
     window[`show${selector}`].style.background = "white";
     window[`show${selector}`].style.transitionDelay = "0s";
@@ -61,6 +63,6 @@ function shower(elemento, posicion) {
   });
 }
 
-for (i = 1; i < 14; i += 1) {
+for (i = 1; i < 15; i += 1) {
   shower(window[`show${i}`], i);
 }

@@ -4,7 +4,6 @@
   padding: 0;
   color: black;
   text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
 
@@ -39,6 +38,7 @@ header {
   display: flex;
   width: 18rem;
   justify-content: space-between;
+  list-style: none;
 }
 .navbar li {
   font-weight: bold;
@@ -290,7 +290,7 @@ hr {
   align-items: center;
   width: 100%;
   background: #efeff0;
-
+  position: relative;
   height: 100vh;
   transform: translateX(-120px);
   overflow: hidden;
@@ -351,7 +351,10 @@ hr {
 .show h2 {
   display: none;
   position: absolute;
-  left: calc(50% - 50px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
   bottom: 60px;
 }
 
@@ -420,8 +423,9 @@ hr {
   color: #3b3b3b;
 }
 #introduccion ul {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #3b3b3b;
+  list-style: circle !important;
   display: inline-block;
   width: 60rem;
   text-align: justify;
@@ -431,6 +435,7 @@ hr {
   font-size: 1.5rem;
   width: 68rem;
   color: #3b3b3b;
+  margin-bottom: 0.7rem;
   display: inline-block;
   border-radius: 100%;
   position: relative;
@@ -559,6 +564,7 @@ hr {
   flex-direction: column;
   justify-content: right;
   align-items: left;
+  width: 100%;
   border-radius: 100%;
   position: relative;
   text-align: justify;
@@ -594,7 +600,6 @@ body {
   color: #f8f8f8;
 }
 #semana3 {
-  background: ;
   padding: 5rem 0 5rem 0;
   display: flex;
   align-items: flex-start;
