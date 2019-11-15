@@ -938,3 +938,45 @@ body {
 #semana9 img {
   padding-bottom: 1.5rem;
 }
+/* Semana 10*/
+#semana10 {
+  background: #f8f8f8;
+  padding: 5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#semana10 h1 {
+  margin: 0 0 2.5rem 0;
+  font-size: 5rem;
+  color: #3b3b3b;
+  text-align: center;
+}
+#semana10 h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana10 h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #3b3b3b;
+  align-items: left;
+}
+#semana10 p {
+  font-size: 1.5rem;
+  padding: 0 25rem 0 25rem;
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: left;
+  position: relative;
+  text-align: justify;
+}
+#semana10 img {
+  padding-bottom: 1.5rem;
+}
